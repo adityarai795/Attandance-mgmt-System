@@ -39,18 +39,7 @@
       npm start
       ```
 
-## Usage
 
-1. **Login/Register**: Register a new user or login with existing credentials.
-2. **Manage Attendance**: View the list of students and update their attendance.
-3. **Add Student**: Use the "Add Student" feature to include new student data and their image.
-4. **Delete Student**: Remove a student by their register number.
-5. **Retrieve Student**: Fetch student details by their register number.
-6. **Export Data**:
-   - **Excel**: Export attendance records between selected dates.
-   - **Word**: Download the current day's attendance.
-
-## API Endpoints
 
 ### Authentication
 
@@ -123,16 +112,6 @@
     }
     ```
 
-- **Export Attendance Data (Excel)**: `GET /data/download?start=2023-01-01&end=2023-12-31`
-  - **Query Parameters**:
-    - `start`: Start date of the range in `YYYY-MM-DD` format.
-    - `end`: End date of the range in `YYYY-MM-DD` format.
-  - **Response**: A downloadable CSV file containing the attendance data.
-
-- **Download Today’s Attendance (Word)**: `GET /attendanceToday/:date`
-  - **Query Parameter**:
-    - `date`: Date in `YYYY-MM-DD` format.
-  - **Response**: A downloadable Word document containing the attendance details of present students for the specified date.
 
 ### Students
 
@@ -184,7 +163,7 @@ attendance-management-system/
 │   └── ...
 │
 ├── .gitignore
-├── README.md
+├── README.md 
 └── ...
 ```
 
@@ -204,3 +183,4 @@ Feel free to further customize the README according to your project's requiremen
 Happy coding 
 
 **Cheers Gc**
+ 
