@@ -5,14 +5,15 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const cors = require('cors');
 const Docxtemplater = require('docxtemplater');
 const officegen = require('officegen');
+const dotenv = require('dotenv').config();
 
 const path = require('path');
 const app = express();
 const StudentModel = require('./models/Student1');
 const AttendanceModel = require('./models/Attendance2');
 app.use(express.json());
-app.use(cors({ origin: ["http://localhost:3000", "https://mern-attendance-app.onrender.com"] }));
-mongoose.connect('// add your mongodb connection url', {
+app.use(cors({ origin: "http://localhost:3000" }));
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
 });
 
@@ -368,7 +369,7 @@ function isValidDateFormat(date) {
 
 // ... (your other routes and app.listen)
 
-app.listen(3031, () =>
+app.listen(process.env.PORT, () =>
 {
-    console.log('server runningg....');
+    console.log(`server runningg....${process.env.PORT}`);
 })

@@ -3,8 +3,8 @@ import './App.css';
 import Axios from 'axios';
 import './StudentForm.css';
 
-const URL1 = process.env.REACT_APP_SERVER_URL;
-const URL="https://mern-attendance-app-api.onrender.com"
+const URL = process.env.REACT_APP_SERVER_URL;
+// const URL="https://mern-attendance-app-api.onrender.com"
 function AttendanceDownload() {
     
     const [result, setResult] = useState('');
@@ -13,7 +13,7 @@ function AttendanceDownload() {
     const datelist = [startDate, endDate];
     const handleDownloadAttendance = async (e) => {
         e.preventDefault();
-    await Axios.get(`https://mern-attendance-app-api.onrender.com/data/download?start=${startDate}&end=${endDate}`, { responseType: 'blob' })
+    await Axios.get(`https://localhost:5000/data/download?start=${startDate}&end=${endDate}`, { responseType: 'blob' })
       .then((response) => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
         const link = document.createElement('a');

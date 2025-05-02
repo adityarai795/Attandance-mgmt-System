@@ -19,8 +19,8 @@ import StudentList from './StudentList';
 import StudentFormPage from './StudentFormPage'; // Import StudentFormPage component
 import ParentComponent from './ParentComponent';
 // import RemoveStudentPage from './RemoveStudentPage'; 
-const URL1 = process.env.REACT_APP_SERVER_URL;
-const URL="https://mern-attendance-app-api.onrender.com"
+const URL = process.env.REACT_APP_SERVER_URL;
+// const URL="https://mern-attendance-app-api.onrender.com"
 function App() {
   const [name, setName] = useState('');
   const [rollnumber, setRollnumber] = useState(0);
