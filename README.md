@@ -1,80 +1,5 @@
 
----
 
-# 📚 Attendance Management System
-
-Hey everyone, it’s **Gc** here!
-
-I'm thrilled to share an exciting update on our Attendance Management System. We've created a robust web application using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Firebase Authentication and Storage. This system streamlines the management of student attendance, making it easier than ever to track, update, and export attendance records.
-
-**If you find this project helpful or interesting, please consider starring the repository on GitHub! Your support is greatly appreciated.**
-
-Feel free to check out my other repositories:
-
- - [AutoDocMailer](https://github.com/Guru-1205/AutoDocMailer)
- - [EventTextGen](https://github.com/Guru-1205/EventTextGen)
-
-## Table of Contents
-- [👋 Introduction](#introduction)
-- [✨ Features](#features)
-- [🛠️ Technologies Used](#technologies-used)
-- [🔧 Prerequisites](#prerequisites)
-- [🚀 Installation](#installation)
-- [📖 Usage](#usage)
-- [📡 API Endpoints](#api-endpoints)
-- [📂 Folder Structure](#folder-structure)
-- [🤝 Contributing](#contributing)
-- [📧 Contact](#contact)
-
-## Introduction
-
-The Attendance Management System is a web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Firebase Authentication and Storage. It provides a comprehensive solution for managing student attendance, adding or removing student data, and generating attendance reports.
-
-## Features
-
-- **🔐 User Authentication**: Securely register and login with email and password using Firebase Authentication. This ensures that only authorized personnel can access and manage the system.
-  
-- **📋 Manage Attendance**: 
-  - **View Attendance**: Displays a list of all students with their names, register numbers, and images. 
-  - **Search Students**: Quickly find students by their name.
-  - **Update Attendance**: Admins can mark students as present or absent using radio buttons, updating their status multiple times throughout the day. The system maintains the attendance status for the current date, resetting it automatically at the start of each new day.
-
-- **📝 Student Data Management**:
-  - **Add Student**: Capture essential student information including name, register number, and image. Images are stored in Firebase Storage, renamed with the student's register number for unique identification.
-  - **Delete Student**: Remove student records easily by entering their register number, which deletes both the record from MongoDB and the image from Firebase Storage.
-  - **Retrieve Student**: Fetch student details by their register number.
-
-- **📊 Export Attendance Data**:
-  - **Excel Export**: Download attendance records between specified dates in Excel format. This report includes student names, gender, year, and their attendance records within the selected range.
-  - **Word Export**: Download the current day's attendance in Word format, listing the names, departments, register numbers, and years of present students.
-
-- **📱 Responsive Design**: The application is designed to work seamlessly across various devices, including desktops, tablets, and mobile phones.
-
-
-## Technologies Used
-
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: Firebase Authentication
-- **Storage**: Firebase Storage
-- **Excel Export**: [csv-writer](https://www.npmjs.com/package/csv-writer) library
-- **Word Export**: [officegen](https://www.npmjs.com/package/officegen) library
-
-## Prerequisites
-
-- [Node.js](https://nodejs.org/) (v14.x or later)
-- [MongoDB](https://www.mongodb.com/) (Local or Atlas)
-- [Firebase Project](https://firebase.google.com/) (for Authentication and Storage)
-- [Git](https://git-scm.com/)
-
-## Installation
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/Guru-1205/attendance-management-system.git
-    cd attendance-management-system
-    ```
 
 2. **Backend Setup**:
     ```bash
@@ -271,9 +196,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 For any questions or suggestions, please reach out to:
 
-- **Name**: Guru Charan K S 
-- **Email**: premguru1045@gmail.com
-- **GitHub**: [Guru-1205](https://github.com/Guru-1205)
 
 ---
 
